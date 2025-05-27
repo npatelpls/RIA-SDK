@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--        <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:; upgrade-insecure-requests;">-->
+        <meta name="viewport" content="width=device-width, height=device-height" />
+        <script src="https://staging-embedded.riamoneytransfer.com/sdk/rmtsso_sdk.min.js"></script>
+        <script>
+            var elementId = "rmt_container";
+            var userData = {};
+            var tokenCallback = (token) => {
+                PLS.logToken(token);
+            };
+            var checkLoggedInCallback = () => {};
+            var ssoParams = {
+                language: "en-US",
+            };
+        </script>
+    </head>
+    <body>
+        <div id="rmt_container"></div>
+    </body>
+</html>
